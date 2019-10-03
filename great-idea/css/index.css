@@ -162,23 +162,30 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     position: fixed;
     background-color: white;
     z-index: 999;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 880px;
-    height: 78px;
+    width: 90%;
     margin: 0 50px;
+    padding: 20px 0;
 }
 
 nav a {
-    padding: 5px 30px;
-    margin: 15px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-decoration: none;
     color: grey;
+    width: 90%;
 }
 
 nav a:hover {
@@ -205,17 +212,18 @@ nav a:hover {
 header {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 100px 0;
-    width: 880px;
-    margin: 0 50px;
+    /* padding: 100px 0; */
+    width: 90%;
+    margin: 100px 50px 50px 50px;
 }
 
 .Call-To-Action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 100px;
+    margin: 100px;
 }
 
 h1 {
@@ -224,7 +232,7 @@ h1 {
 }
 
 .Upper-Content {
-    width: 880px;
+    width: 90%;
     margin: 0 50px;
     padding-top: 50px;
     border-top: 1px solid black;
@@ -246,7 +254,7 @@ h1 {
 }
 
 .Lower-Content {
-    width: 880px;
+    width: 90%;
     margin: 0 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid black;
@@ -270,12 +278,12 @@ h1 {
 }
 
 .Contact {
-    width: 880px;
+    width: 90%;
     margin: 50px;
 }
 
 footer {
-    width: 880px;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 150px;
